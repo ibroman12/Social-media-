@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>3D</title>
+</head>
+   <style>
+    .input-cnt{
+     background: #1E2469 ;
+     height: 15rem ;
+     width: 200px;
+     position: relative ;
+     left: 100px ;
+     color: white ;
+     font-size: 20px ;
+     text-align: center ;
+     top: 100px ;
+    }
+    div,.div2::before{
+     position: absolute ;
+     height: 100%;
+     width: 10px;
+     content: '';
+     top: 0;
+     left: 0;
+     background: linear-gradient(gold, red, blue);
+     z-index: 1;
+     filter: blur(0px);
+    }
+    div,.div2::after{
+      position: absolute;
+      height: 100%;
+      width: 10px;
+      content: '';
+      top: 200;
+      right: -200px;
+      background: linear-gradient(gold, red, blue);
+      z-index: 1;
+      filter: blur(0px);
+    }
+   .div2::before{
+    position: absolute ;
+    content: '';
+    background: linear-gradient(red, blue, yellow);
+    top: 240px ;
+    height: 10px ;
+    width: 210px ;
+    z-index: 1;
+   }
+   </style>
+<body>
+    <div class="input-cnt">
+        <div class="div2"></div>
+        <div class="div3"></div>
+    </div>
+</body>
+
+</html>

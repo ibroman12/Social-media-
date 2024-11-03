@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>multicoloured</title>
+</head>
+   <style>
+    *{
+     box-sizing: border-box ;
+     margin: 0;
+     padding: 0;
+     font-family:'Popping'sans-serif 
+    }
+    body{
+     display: flex;
+     align-items: center ;
+     justify-content: center ;
+     -ms-align-items: center ;
+     height: 100vh;
+    }
+   .address{
+    display: flex ;
+    background: white;
+    height: 200px ;
+    align-items: center ;
+    justify-content: center ;
+    -ms-align-items: center ;
+    min-height: 120px;
+    position: relative;
+   }
+   :root{
+    --color1: #0FFB50;
+     --color2: #FD8A0C;
+     --color3: #FF0AC5;
+     --color4: #240FFB;
+     --color5: #0076ff;
+   }
+   h1{
+    font-family: Arial ;
+    font-size: 30px;
+    font-weight: 900;
+    margin: auto;
+    text-transform: uppercase;
+    background: linear-gradient(300deg,var(--color1)19%,transparent 20%,var(--color2)20%,var(--color2)39%, transparent 39%,transparent 40%, var(--color3) 40%,var(--color3) 59%,transparent 59%, transparent 60%,var(--color4)60%,var(--color4)79%,transparent 79%,transparent 80%, var(--color5) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+   }
+   </style>
+<body>
+    <div class="address">
+         <h1>HTML AND CSS </h1>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<style>
+button {
+font-family: Roboto, sans-serif;
+padding: 1rem 2rem;
+font-size: 2rem;
+border: 0;
+color: #333;
+
+--top-color: #ccc;
+--bottom-color: #999;
+--right-color: #ddd;
+
+background: var(--top-color);
+
+transition:
+box-shadow 0.25s,
+transform 0.15s;
+
+box-shadow:
+1px 0 0 var(--right-color),
+1px 1px 0 var(--bottom-color),
+2px 1px 0 var(--right-color),
+2px 2px 0 var(--bottom-color),
+3px 2px 0 var(--right-color),
+3px 3px 0 var(--bottom-color),
+4px 3px 0 var(--right-color),
+4px 4px 0 var(--bottom-color),
+5px 4px 0 var(--right-color),
+5px 5px 0 var(--bottom-color),
+6px 5px 0 var(--right-color),
+6px 6px 0 var(--bottom-color),
+7px 6px 0 var(--right-color),
+7px 7px 0 var(--bottom-color),
+8px 7px 0 var(--right-color),
+8px 8px 0 var(--bottom-color),
+
+-5px 20px 40px -8px #999;
+&:hover {
+outline: 0;
+box-shadow:
+1px 0 0 var(--right-color),
+1px 1px 0 var(--bottom-color),
+2px 1px 0 var(--right-color),
+2px 2px 0 var(--bottom-color),
+3px 2px 0 var(--right-color),
+3px 3px 0 var(--bottom-color),
+4px 3px 0 var(--right-color),
+4px 4px 0 var(--bottom-color),
+
+-5px 5px 12px -8px #999;
+
+transform: translate(3px, 3px);
+}
+
+&:active {
+outline: 0;
+box-shadow:
+1px 0 0 var(--right-color),
+1px 1px 0 var(--bottom-color);
+
+transform: translate(5px, 5px);
+}
+}
+
+
+
+
+body {
+height: 100vh;
+margin: 0;
+display: grid;
+place-items: center;
+background: #eee;
+}
+View Compiled
+
+
+Resources
+</style>
+<button> Boxy Boxy </button>

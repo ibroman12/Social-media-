@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>ibro</title>
+</head>
+   <style>
+    body{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: black;
+     height: 100vh ;
+     place-items: center;
+     padding: 0;
+     margin: 0;
+    }
+   .container{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    position: relative;
+   }
+   input{
+    display: none;
+   }
+   .tab-name{
+    padding: 10px 30px;
+    transition: 0.25s;
+    cursor: pointer;
+    height: 45px ;
+    font-family: Poppin;
+    color: white ;
+    background: rgba(255,255, 255, 0.25);
+    box-sizing: border-box;
+   }
+   input:checked + label .tab-name{
+    background: #3dc4fe;
+    color: white;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+   }
+   .tab-content{
+    position: absolute ;
+    top: 50px;
+    left: 0;
+    background: white;
+    font-family: Poppin;
+    opacity: 0;
+    z-index: 0;
+    transition: 0.5s;
+    padding: 55px ;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 300px ;
+    width: 500px ;
+    letter-spacing: 2px;
+    line-height: 1.9em;
+   }
+   input:checked+label .tab-content{
+    opacity: 1;
+    z-index: 1;
+   }
+   
+   </style>
+<body>
+   <div class="container">
+      <input type="radio" name="option" id="1" checked>
+      <label for="1">
+       <div class="tab-name">Home</div>
+       <div class="tab-content">
+        tab-contentShanta somaliyed aya ila joogta maanta dhibatada dalka jirto waa odayash
+        <img src="FB.jpg" alt="pp.jpg" width="200" width="200">
+       </div>
+      </label>
+        <input type="radio" name="option" id="2" checked>
+        <label for="2">
+         <div class="tab-name">About</div>
+         <div class="tab-content">
+          tab-contentShanta somaliyed aya ila joogta maanta dhibatada dalka jirto waa odayash😭🇸🇴
+         </div>
+        </label>
+         <input type="radio" name="option" id="3" checked>
+         <label for="3">
+          <div class="tab-name">shop</div>
+          <div class="tab-content">
+           tab-contentShanta somaliyed aya ila joogta maanta dhibatada dalka jirto waa odayash😭🇸🇴
+          </div>
+         </label>
+          <input type="radio" name="option" id="4" checked>
+          <label for="4">
+           <div class="tab-name">contact</div>
+           <div class="tab-content">
+            tab-contentShanta somaliyed aya ila joogta maanta dhibatada dalka jirto waa odayash
+           </div>
+          </label>
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>OFF or NO</title>
+</head>
+  <style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+   }
+   body{
+    background: #8389CB;
+    justify-content: center ;
+    align-items: center ;
+    -ms-align-items: center;
+    min-height: 100vh ;
+    display: flex ;
+   }
+   input{
+    appearance: none;
+    cursor: pointer;
+    transition: height 1s ;
+    padding: 10px 20px ;
+    background: white ;
+    font-weight: 800;
+    border-radius: 20px ;
+    position: relative ;
+    height: 100px ;
+    width: 100px ;
+   }
+   input::before{
+    content: 'On';
+    color: green;
+    position: absolute ;
+    width: 300px;
+    font-size: 40px ;
+    
+   }
+   input:checked::before{
+    content: 'OFF';
+    color: red;
+    text-shadow: 2px 2px 40px #00F5FF;
+    position: absolute;
+   }
+   after{
+    position: absolute ;
+    content: '';
+    height: 300px ;
+    width: 200px ;
+    background: greenyellow;
+    inset: 5px ;
+    top: -50px ;
+    left: -50px;
+    background: white;
+   }
+  </style>
+<body>
+  <div>
+   <input type="checkbox" name="" id="">
+  </div>
+</body>
+
+</html>

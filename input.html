@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>input</title>
+</head>
+  <style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppin"  sans-serif ;
+   }
+   body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -ms-align-items: center;
+    min-height: 100vh;
+    background: #7D2E80;
+   }
+   .container{
+    height: 450px;
+    width: 350px;
+    border: 3px solid rgba(255,255,255,0.3);
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px ;
+   }
+   input,label,h1{
+    align-items: center;
+    display: flex ;
+    margin: 1px ;
+    justify-content: center;
+    height: 45px;
+    text-align: center;
+    width: 310px ;
+    font-size: 20px;
+    border-radius: 10px;
+    color: black;
+    border: none;
+    position: relative;
+    left: 10px ;
+   }
+   h1{
+    font-size: 40px ;
+    color: #04FF29;
+    background: blue;
+    width: 348px;
+    border-radius: 0px ;
+    position: relative;
+    left: -3px;
+    top: -2px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   }
+   .input-cnt{
+    display: flex;
+    position: relative;
+    top: 40px ;
+    background: white;
+    color: blue;
+   }
+   label{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+   }
+   input::placeholder{
+    content: '';
+    position: absolute;
+    color: blue;
+    left: 30px;
+    letter-spacing: 2px;
+   }
+  </style>
+<body>
+   <div class="container">
+    <div>
+         <div>
+         <h1>sign</h1>
+         </div>
+     <label>
+      username 
+     </label>
+     <input type="text" name="username" id="" placeholder="username">
+    </div>
+    <div>
+    <label for="">
+     password 
+    </label>
+    <input type="password" name="" id="" placeholder="Password">
+    </div>
+    <div>
+     <p id="button1"></p>
+     <input type="button" value="LOGIN" class="input-cnt" onclick="document.getElementById('button1').innerHTML = 'kumawayo'; " id="scale">
+     <button type="button" onclick="document.getElementById('button1').innerHTML = 'ku soo dhawaw'; ">Login</button>
+    </div>
+   </div>
+</body>
+
+</html>

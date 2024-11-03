@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>chat bot</title>
+</head>
+   <style>
+    body{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+    }
+    .container{
+     display: inline-block;
+     backdrop-filter: blur(20px);
+     background: linear-gradient(#82C6AB,#537C63);
+     height: 34.1rem;
+     width: 23rem;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px 10px 10px 10px;
+    }
+   .chat{
+    background: #1C5380;
+    color: white;
+    text-align: center;
+    height: 50px;
+    position: relative;
+    display: flex;
+    top: -30px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1.6px solid #EAFFF1;
+    border-radius: 10px  10px 0px  0px;
+   }
+   .input1{
+    position: relative;
+    top: 21.6rem;
+    width: 290px;
+    height: 35px;
+    background: linear-gradient(#FFFFFF,#BDC2C3);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 0px  0px  0px  10px;
+   }
+   .input2{
+    position: relative;
+    top: 21.6rem;
+    height: 38px ;
+    font-size: 20px;
+    width: 69.6px;
+    font-weight: bold;
+    left: -3px;
+    background: linear-gradient(#FFFFFF,#BDC2C3);
+    border: none ;
+    outline: none;
+    color: #0E76FE;
+    border-radius: 0px 0px 5px 0px;
+   }
+   .input2:hover{
+    background: blue;
+    color: white;
+    transition: all 0.5s;
+   }
+   .how{
+    background: #5FE98D;
+    color: whitesmoke;
+    width: 200px;
+    height: 55px;
+    align-items: center;
+    justify-content: center ;
+    display: flex;
+    position: relative;
+    top: 200px;
+    left: 150px;
+    border-radius: 0px 20px 0px 20px;
+   }
+   .fine{
+    position: relative;
+    top: 230px;
+    color: white;
+    left: 15px ;
+    background: #BCC5BF;
+    width: 200px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 0px 20px 0px;
+   }
+   .fine::before{
+    content: '';
+    height: 60px;
+    width: 370px;
+    background: linear-gradient(#A1B5E5,#6D7981);
+    position: absolute;
+    left: -16px ;
+    top: 169px;
+    border-radius: 0px 0px 20px 20px;
+   }
+   </style>
+<body>
+   <div class="container">
+      <div class="chat">
+       <h2>Chat bot</h2>
+      </div>
+         <div class="how">
+          <h3> how are you 👋  </h3>
+         </div>
+             <div class="fine">
+              <h3>I'm fine thanks 🙏</h3>
+             </div>
+      <div>
+       <input type="text" placeholder="chat" class="input1">
+        <input type="submit" value="send" class="input2" id="two">
+      </div>
+   </div>
+   <script>
+  /*  let ibro = ["javascript", "muuse", "abshir"];
+    let abd = ["ibro", "height", "nuur"];
+    let me = ibro+abd;
+    console.log(me);
+    */
+   </script>
+</body>
+
+</html>

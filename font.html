@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>transition click</title>
+</head>
+<style>
+    body{
+     background: #111B8B;
+     display: flex ;
+     align-items: center ;
+     justify-content: center ;
+     min-height: 100vh;
+    }
+    h1{
+     font-size: 40px;
+     color: white ;
+     font-weight: 150;
+     transition: font-weight 1s;
+     background:red ;
+     text-align: center ;
+     max-height: 150px ;
+     width: 300px ;
+     border-radius: 20px ;
+     transition: all 0.5s ease;
+    }
+    
+    h1:hover{
+     font-weight: 1000;
+     background: repeating-linear-gradient(black, blue);
+     min-height: 300px;
+     border-radius: 100%;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     z-index: 1;
+     animation: ibro 5s linear infinite;
+     outline 10px groove #FF9D00;
+     box-shadow: 50px 50px 2px -5px red ,
+                 -70px -70px 2px -5px dodgerblue,
+                12px 12px 1px  yellow,
+                -12px -12px 0px yellow;
+    }
+    h1:hover::before{
+     content: '';
+     position: absolute;
+     height: 150px;
+     border-radius: 50%;
+     width: 300px;
+     transition: 1s ease;
+     margin: auto;
+     box-shadow: 50px 50px 1px greenyellow,
+                 -50px -50px 1px dodgerblue;
+     transform: rotate(610deg);
+     animation: ibro 1s linear infinite;
+    }
+    h1:hover::after{
+     content: '';
+     position: absolute ;
+     height: 150px ;
+     width: 300px;
+          transition: 1s ease;
+          margin: auto;
+          border-radius: 50%;
+          box-shadow: 40px 40px 1px greenyellow,
+          -40px -40px 1px greenyellow;
+          transform: rotateX(-200deg);
+          animation: ibro 1s linear infinite;
+    }
+   .second-letter:first-letter{
+    font-size: 90px ;
+    font-family: 'Great Vibes', cursive;
+   }
+   .input-cnt ul li:not(:nth-child(3) ){
+    color: red;
+   }
+   @keyframes ibro {
+    from{
+     transform: rotate(0deg);
+    }
+    to{
+     transform: rotate(360deg);
+    }
+   }
+</style>
+<body>
+   <div>
+    <h1 class="second-letter"> 100%</h1>
+    <div class="input-cnt">
+    <ul>
+    </ul>
+    </div>
+   </div>
+</body>
+
+</html>

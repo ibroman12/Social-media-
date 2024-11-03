@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>animation</title>
+</head>
+   <style>
+    *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box ;
+     font-family: 'Poppins' sans-serif ;
+    }
+    body{
+     display: flex ;
+     background: #2E4A7F;
+     align-items: center ;
+     -ms-align-items: center ;
+     justify-content: center ;
+     min-height: 100vh ;
+    }
+    .box{
+     position: relative;
+     height: 350px ;
+     width: 300px ;
+     background: #473E37;
+     border-radius: 20px;
+     display: flex ;
+     align-items: center ;
+     justify-content: center ;
+     -ms-align-items:center ;
+     overflow: hidden;
+    }
+    .box::before{
+     content: '';
+     position: absolute ;
+     height: 150%;
+     width: 200px ;
+     background: linear-gradient(#00EFFF,#9200FF,#FF0000);
+     animation: spin 6s linear infinite;
+    }
+    .box::after{
+     content: '';
+     position: absolute ;
+     inset: 5px ;
+     background: #473E37;
+     border-radius: 20px ;
+    }
+    @keyframes spin {
+     from{
+      transform: rotate(0deg);
+     }
+     to{
+      transform: rotate(360deg);
+     }
+    }
+   </style>
+<body>
+    <div class="box">
+       <div class="bb">box2</div>
+    </div>
+</body>
+
+</html>

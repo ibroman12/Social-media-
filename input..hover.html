@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Hover</title>
+</head>
+   <style>
+    body{
+     display: flex ;
+     justify-content: center;
+     align-items: center ;
+     -ms-align-items: center ;
+     min-height: 100vh ;
+     background: linear-gradient(red, green);
+    }
+    .box{
+     background: transparent;
+     height: 300px;
+     width: 300px;
+     align-items: center;
+     display: flex ;
+     justify-content: center;
+     border: 3px solid #8FA18C;
+     border-radius: 20px;
+    }
+    input{
+     height: 35px;
+     width: 50rem;
+     border: 3px solid #00FF03;
+     position: relative ;
+     left: 40px ;
+     outline: none ;
+     border-radius: 0px ;
+     transition: 2s linear infinite;
+    }
+    p{
+     color: blue;
+     z-index: 1;
+     position: relative ;
+     right: 140px ;
+     font-size: 20px ;
+     letter-spacing: 4px ;
+     pointer-events: none;
+    }
+    .skewed,input:focus~p,
+    .skewed,input:valid~p{
+     top: 0;
+     background: white;
+    }
+   </style>
+<body>
+    <div class="box">
+     <input type="text" name="username" class="input-cnt" required>
+     <p class="skewed">username</p>
+    </div>
+</body>
+
+</html>

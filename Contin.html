@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title></title>
+</head>
+  <style>
+   body{
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    min-height: 100vh;
+   }
+   .input-cnt{
+    border-radius: 50%;
+    width: 400px ;
+    height: 400px;
+    height: 0;
+    padding-top: 100%;
+    background: conic-gradient(
+        red 0 10%,
+        blue 0 25%,
+        gold 0 40%,
+        green 0 50%,
+        #05F655 0 60%,
+        #F605EF 0 70%,
+        dodgerblue 0 85%,
+        yellow 0     10%
+        );
+        animation: spin 0s linear infinite ;
+   }
+   @keyframes spin {
+    100%{
+     transform: rotate(360deg);
+    }
+   }
+   h1{
+    display: flex ;
+    left: 155px ;
+    position: absolute;
+    top: 300px;
+    z-index: 1;
+    background: white;
+    height: 100px ;
+    width: 100px ;
+    text-align: center;
+    align-items: center ;
+    justify-content: center;
+    border-radius: 50%;
+    color: #DE01FF;
+    box-shadow: 2px 2px 40px black;
+   }
+  </style>
+<body>
+    <div class="input-cnt">
+     <h1>Here</h1>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title></title>
+</head>
+ <style>
+   .div1{
+    background: #533B9B;
+    height: 20rem ;
+    width: 20rem ;
+    position: relative ;
+    left: 10px ;
+    top: 100px ;
+    border-radius: 20px ;
+    box-shadow: 2px 2px 40px -10px black;
+    text-align: center ;
+    margin: 10px ;
+    border-left: 5px solid #FFCF0D ;
+    border-right: 5px solid #5AFF06;
+   }
+   input{
+    position: relative ;
+    top: 30px ;
+    height: 50px ;
+    width: 200px ;
+    margin: 5px ;
+    border: none ;
+    outline: none ;
+    border-radius: 30px ;
+    font-size: 20px ;
+    text-align: center ;
+    border-left: 5px solid #FFD015;
+    border-right: 5px solid  #5DFF0B;
+    box-shadow: 2px 2px 40px -10px black;
+    
+   }
+   input:hover::placeholder{
+    content: '';
+    color: #FF6300 ;
+    border: none ;
+    top:  -5px;
+    position: relative ;
+    border-top: 4px solid blue;
+    font-size: 40px;
+   }
+   #rotate:hover{
+    background: blue;
+    color: white ;
+   }
+   .input-cnt{
+    padding: 15px ;
+    height: 100px ;
+    background: red ;
+    z-index: 1;
+    position: relative ;
+    width: 290px ;
+    left: 20px ;
+    top: -10px ;
+    border-radius: 0px 0px 50px 50px ;
+    border-left: 5px solid #FFBF0F;
+    border-right: 5px solid #47F823;
+   }
+   input,.div1,.input-cnt{
+    border-width: 10px;
+    word-wrap: break-word;
+   }
+  .skewed{
+   height: 100px ;
+   padding: 15px ;
+   background: #F00AFF;
+   width: 290px ;
+   left: 20px ;
+   position: relative ;
+   border-left: 5px solid #FFDF0A;
+   border-right: 5px solid #44FF0A;
+   border-width: 10px ;
+   border-radius: 50px 50px 0px 0px ;
+   top: -29rem;
+   
+   color: white ;
+   text-indent: 100px ;
+  }
+ </style>
+<body>
+ <div class="div1">
+   <input type="username" placeholder="username" name="username" id="username">
+   <input type="email" placeholder="Email" name="email" id="email">
+   <input type="button" value="LOGIN" id="rotate">
+ </div>
+ <div class="input-cnt">
+  
+ </div>
+ <div class="skewed">
+    Sign Up 
+ </div>
+</body>
+
+</html>

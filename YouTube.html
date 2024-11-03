@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>shoes</title>
+</head>
+   <style>
+    html{
+     background: black ;
+    }
+   .input-cnt{
+    width: 300px ;
+    height: 300px ;
+    background: #2D2D8E;
+    position: relative ;
+    left: 50px ;
+    top: 100px ;
+    text-align: center ;
+   }
+   img{
+    position: relative ;
+    top: 40px ;
+    border-radius: 50%;
+    border: 10px groove #FFA300;
+    animation: spin 1s linear infinite ;
+   }
+   img:hover{
+    width: 300px ;
+    height: 300px ;
+    top: 0px ;
+    border-radius: 0px ;
+   }
+   @keyframes spin {
+    100%{
+     transform: rotate(0deg);
+    }
+   }
+   </style>
+<body>
+    <div class="input-cnt">
+       <div>
+        <img src="shoes.jpg" alt="shop" width="200px" height="200px">
+       </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Tabs</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+  <style>
+   body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    background: black;
+   }
+   
+   .container {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    position: relative;
+   }
+   
+   input {
+    display: none;
+   }
+   
+   .tab-name {
+    color: white;
+    font-family: Poppin;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 10px 30px;
+    box-sizing: border-box;
+    transition: 0.25s;
+    cursor: pointer;
+   }
+   
+   input:checked+label .tab-name {
+    background: #3dc4fe;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+   }
+   
+   .tab-content {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: white;
+    color: black;
+    font-family: Poppin;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 0;
+    transition: 0.5s;
+   }
+   
+   input:checked+label .tab-content {
+    opacity: 1;
+    z-index: 1;
+   }
+   img{
+    border: 10px double #FFA900;
+    border-radius: 50%;
+    align-items: center ;
+    display: flex ;
+    justify-content: center;
+    text-align: center ;
+   }
+  </style>
+<body>
+ <div class="container">
+  <input type="radio" name="option" id="1" checked>
+  <label for="1">
+   <div class="tab-name">Home</div>
+   <div class="tab-content">
+    <strong>Home</strong>
+    kumawayo  is legend  of mine sit amet consectetur adipisicing elit. Quas nisi error officia earum est nostrum
+    voluptas non quibusdam! Veniam eaque repellat aliquid totam quia iusto neque unde, nisi non ducimus.
+    <img src="shoes.jpg" alt="shoes.jpg" width="200" height="200">
+   </div>
+  </label>
+  <input type="radio" name="option" id="2">
+  <label for="2">
+   <div class="tab-name">Blog</div>
+   <div class="tab-content">
+    Impedit, vitae incidunt? Aliquid distinctio adipisci commodi alias iste dolorem quo,
+    amet provident, tenetur quibusdam vero fugiat sequi omnis architecto suscipit soluta modi rerum
+    laboriosam. Suscipit ipsam sunt qui, veritatis non eos, saepe eligendi veniam libero fugiat nostrum
+    nihil molestias numquam. Neque?
+   </div>
+  </label>
+  <input type="radio" name="option" id="3">
+  <label for="3">
+   <div class="tab-name">Shop</div>
+   <div class="tab-content">
+    Molestias explicabo maxime nobis nisi quae, quis dolorem harum voluptates commodi laudantium odio nihil
+    quisquam architecto illum voluptatibus ea nesciunt dolorum fugiat repellat unde deserunt? Laudantium cum
+    aliquid suscipit beatae, consequatur ipsam, quidem eligendi labore rem dignissimos quasi! Magni illum
+    earum eum ducimus facere at molestiae esse odit ullam. Fugit, soluta adipisci!
+   </div>
+  </label>
+  <input type="radio" name="option" id="4">
+  <label for="4">
+   <div class="tab-name">News</div>
+   <div class="tab-content">
+    Animi fugit unde totam quasi iusto quis sunt nisi quam, qui ex corrupti necessitatibus iure optio.
+    Labore perspiciatis voluptatum sapiente earum provident doloremque quam tenetur, repellendus commodi
+    eligendi? Esse quaerat laborum dolorum.
+   </div>
+  </label>
+ </div>
+</body>
+
+</html>
